@@ -15,6 +15,7 @@ import userAvatar08 from './userAvatar08.svg'
 import userAvatar09 from './userAvatar09.svg'
 import HeroImageMobile from './Hero Image (Tablet View).png'
 import Checkmark from './Checkmark.svg'
+import Like from './Like.svg'
 
 export const Images = {
   Twitter,
@@ -34,4 +35,5 @@ export const Images = {
   userAvatar09,
   HeroImageMobile,
   Checkmark,
+  Like,
 }

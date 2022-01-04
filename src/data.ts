@@ -41,6 +41,39 @@ const APP_ADVANTAGES = [
   }
 ]
 
+const TWEETS = [
+  {
+    author_image: Images.userAvatar08,
+    author: 'Sara May',
+    at: '@sara_may',
+    twitter: Images.TwitterBlue,
+    description: 'I just tired out @chirp and it"s amazing, love all the analytics I can see.',
+    image_like: Images.Like,
+    likes: 2,
+    date: 'March 2, 2021'
+  },
+  {
+    author_image: Images.userAvatar04,
+    author: 'Jack Scott',
+    at: '@jackscott_',
+    twitter: Images.TwitterBlue,
+    description: 'I initially started using Chirp to support the co-founder as O personally knew him, but after having tried it out for a few weeks, I can genuinely say this changed my Twitter game.',
+    image_like: Images.Like,
+    likes: 32,
+    date: 'March 2, 2021'
+  },
+  {
+    author_image: Images.userAvatar06,
+    author: 'Jessica May',
+    at: '@jmay98',
+    twitter: Images.TwitterBlue,
+    description: 'Absolutely love everything about Chirp, from the design to how everything works smoothly.',
+    image_like: Images.Like,
+    likes: 221,
+    date: 'March 2, 2021'
+  }
+]
+
 export const NAVBAR_CONTENT = {
   logo: 'Chirp.',
   links: [
@@ -63,4 +96,9 @@ export const HEADER_CONTENT = {
 export const ADVANTAGES_CONTENT = {
   header: 'Features that help you Tweet smarter.',
   advantages: APP_ADVANTAGES
+}
+
+export const RECOMMENDS_TWEETS = {
+  header: 'What our customers say',
+  tweets: TWEETS,
 }

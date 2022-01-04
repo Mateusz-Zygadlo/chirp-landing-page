@@ -1,5 +1,7 @@
 export { Button } from './Button'
 export { Card } from './Card'
+export { Tweet } from './Tweet'
 export { Navbar } from './Navbar'
 export { Header } from './Header'
 export { Advantages } from './Advantages'
+export { RecommendedTweets } from './RecommendedTweets'
