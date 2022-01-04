@@ -74,6 +74,29 @@ const TWEETS = [
   }
 ]
 
+const OFFER_ADVANTAGES = [{
+    image: Images.Checkmark,
+    paragraph: 'Unlimited scheduled tweets and threads.',
+  },
+  {
+    image: Images.Checkmark,
+    paragraph: 'Schedule up to 3 weeks in advance',
+  },
+  {
+    image: Images.Checkmark,
+    paragraph: 'Real-time audience analytics tracking up to 5k followers',
+}]
+
+const OFFER_LIST = [
+  {
+    term: 'Monthly',
+    price: '$9',
+    shortTerm: '/mo',
+    advantages: OFFER_ADVANTAGES,
+    button: 'Start Trial with Twitter'
+  },
+]
+
 export const NAVBAR_CONTENT = {
   logo: 'Chirp.',
   links: [
@@ -101,4 +124,10 @@ export const ADVANTAGES_CONTENT = {
 export const RECOMMENDS_TWEETS = {
   header: 'What our customers say',
   tweets: TWEETS,
+}
+
+export const PRICING_CONTENT = {
+  header: 'One Simple price plan.',
+  paragraph: 'Start growing your Twitter account by analyzing your follower"s patterns.',
+  offers: OFFER_LIST,
 }
