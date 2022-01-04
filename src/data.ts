@@ -6,7 +6,7 @@ const BUTTON_CONTENT = {
   logo: Images.Twitter
 }
 
-const users = [
+const USERS = [
   Images.userAvatar01,
   Images.userAvatar02,
   Images.userAvatar03,
@@ -18,6 +18,29 @@ const users = [
   Images.userAvatar09,
 ]
 
+const APP_ADVANTAGES = [
+  {  
+    image: Images.Checkmark,
+    header: 'Analytics',
+    paragraph: 'We constantly monitor your audience as it grows - so you can Tweet when your followers are most likely to be online and ready to engage with your content.'
+  },
+  { 
+    image: Images.Checkmark,
+    header: 'Smart Analyzer',
+    paragraph: 'Chirp automatically recognizes your followers` most active times and automatically sends you notifications if you"re missing out on an opportunity.',
+  },
+  { 
+    image: Images.Checkmark,
+    header: 'Scheduled Your Tweets',
+    paragraph: 'Quality tweets drive tons of engagement. With Chirp, you can write tweets in an advance and schedule them when your audience is most likely to read.'
+  },
+  { 
+    image: Images.Checkmark,
+    header: 'Dark Mode',
+    paragraph: 'Friendly on the eyes, no matter what time you write your Tweets. All colors are chosen to make sure your eyes are at ease at all times.'
+  }
+]
+
 export const NAVBAR_CONTENT = {
   logo: 'Chirp.',
   links: [
@@ -27,11 +50,17 @@ export const NAVBAR_CONTENT = {
   ],
   button: BUTTON_CONTENT,
 }
+
 export const HEADER_CONTENT = {
   header: 'Twitter analytics taken to a whole new level.',
   paragraph: 'Chirp os a suite of twitter analytics that will help you better understand your audience, which tweets they like, and most importantly, when they are the most active on Twitter.',
   button: BUTTON_CONTENT,
   about: 'Learn more',
-  usersWhoSignedUp: users,
-  textBelowUsers: `Join ${users.length} other who have analyzed their followers.`
+  usersWhoSignedUp: USERS,
+  textBelowUsers: `Join ${USERS.length} other who have analyzed their followers.`
+}
+
+export const ADVANTAGES_CONTENT = {
+  header: 'Features that help you Tweet smarter.',
+  advantages: APP_ADVANTAGES
 }
