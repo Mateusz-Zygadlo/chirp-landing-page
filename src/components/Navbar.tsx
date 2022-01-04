@@ -3,7 +3,7 @@ import React, {
   useEffect,
 } from 'react'
 import { NAVBAR_CONTENT } from '../data'
-import { MOBILE_WIDTH } from '../constanst'
+import { TABLET_WIDTH } from '../constanst'
 import {  
   useWindowSize,
   useMeasure
@@ -24,10 +24,10 @@ export const Navbar = () => {
   return(
     <div 
       ref={myRef}
-      className="flex justify-between py-8 relative"
+      className="flex justify-between py-8 relative px-5 md:px-16 lg:px-24"
     >
       <h1 className="text-2xl text-blue font-semibold italic cursor-default">{logo}</h1>
-      {width > MOBILE_WIDTH ? (
+      {width > TABLET_WIDTH ? (
         <div className="flex">
           <div className="flex mx-5 items-center">
             {links.map((link: any, index: number) => (

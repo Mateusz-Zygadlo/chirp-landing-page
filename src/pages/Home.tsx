@@ -1,14 +1,17 @@
 import React from 'react'
-import { Navbar } from '../components'
+import { 
+  Navbar,
+  Header,
+} from '../components'
 import { useScrollToTop } from '../hooks'
 
 export const Home = () => {
   useScrollToTop()
-
+  
   return(
-    <div className="px-5 md:px-16 lg:px-24">
+    <div className="w-full max-w-screen-2xl 2xl:mx-auto">
       <Navbar />
-      <h1 className="text-5xl">Home page</h1>
+      <Header />
     </div>
   )
 }
