@@ -6,6 +6,8 @@ const BUTTON_CONTENT = {
   logo: Images.Twitter
 }
 
+export const LOGO_NAME = 'Chirp.'
+
 const USERS = [
   Images.userAvatar01,
   Images.userAvatar02,
@@ -98,7 +100,7 @@ const OFFER_LIST = [
 ]
 
 export const NAVBAR_CONTENT = {
-  logo: 'Chirp.',
+  logo: LOGO_NAME,
   links: [
     { name: 'Home', path: '/' },
     { name: 'Pricing', path: '/' },

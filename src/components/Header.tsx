@@ -25,9 +25,9 @@ export const Header = () => {
   return(
     <div 
       ref={myRef}
-      className="w-full h-full bg-main"
+      className="w-full h-full bg-main pt-5"
     >
-      <div className="flex flex-col-reverse lg:flex-row lg:justify-between py-5 px-5 md:px-16 lg:px-24">
+      <div className="flex flex-col-reverse lg:flex-row lg:justify-between py-5 p-5 md:px-16 lg:px-24">
         <div className="flex flex-col justify-center mt-5 lg:mt-0 lg:w-[40rem] px-5">
           <h1 className="text-4xl lg:text-6xl w-9/12 lg:w-full font-extrabold">{header}</h1>
           <p className="my-3 text-xl w-11/12 lg:w-full">{paragraph}</p>

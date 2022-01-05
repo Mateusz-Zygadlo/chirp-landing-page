@@ -5,6 +5,7 @@ import {
   Advantages,
   RecommendedTweets,
   Pricing,
+  Footer,
 } from '../components'
 import { useScrollToTop } from '../hooks'
 
@@ -18,6 +19,7 @@ export const Home = () => {
       <Advantages />
       <RecommendedTweets />
       <Pricing />
+      <Footer />
     </div>
   )
 }

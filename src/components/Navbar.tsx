@@ -23,7 +23,7 @@ export const Navbar = () => {
 
   return(
     <div 
-      className="px-5 md:px-16 lg:px-24 bg-main py-8"
+      className="px-5 md:px-16 lg:px-24 bg-main py-4 sticky top-0 w-full z-50"
       ref={myRef}
     >
       <div className="flex justify-between relative">

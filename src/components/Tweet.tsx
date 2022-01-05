@@ -29,7 +29,7 @@ export const Tweet: React.FC<TweetProps> = ({
             src={author_image}
             alt="author"
           />
-          <div className="ml-3 relative">
+          <div className="ml-3 relative z-0">
             <h2 className="font-semibold">{author}</h2>
             <p className="text-sm absolute top-5 -left-1 text-gray-500">{at}</p>
           </div>
