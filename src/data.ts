@@ -1,6 +1,5 @@
 import { Images } from './assets'
 
-
 const BUTTON_CONTENT = {
   content: 'Sign in with Twitter',
   logo: Images.Twitter
@@ -102,9 +101,9 @@ const OFFER_LIST = [
 export const NAVBAR_CONTENT = {
   logo: LOGO_NAME,
   links: [
-    { name: 'Home', path: '/' },
-    { name: 'Pricing', path: '/' },
-    { name: 'FAQ', path: '/' },
+    { title: 'Home', href: '#home'},
+    { title: 'Pricing', href: '#pricing' },
+    { title: 'FAQ', href: '#tweets' },
   ],
   button: BUTTON_CONTENT,
 }

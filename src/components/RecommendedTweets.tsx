@@ -6,7 +6,7 @@ export const RecommendedTweets = () => {
   const { header, tweets } = RECOMMENDS_TWEETS
   
   return(
-    <div className="md:px-16 lg:px-24 my-14 px-5 bg-cyan py-16">
+    <div id="tweets" className="md:px-16 lg:px-24 my-14 px-5 bg-cyan py-16">
       <h1 className="text-5xl font-extrabold mb-5">{header}</h1>
       <div className="tweetsGrid">
         {tweets.map((tweet, index: number) => (

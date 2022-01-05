@@ -6,7 +6,7 @@ import { NAVBAR_CONTENT } from '../data'
 import { TABLET_WIDTH } from '../constanst'
 import {  
   useWindowSize,
-  useMeasure
+  useMeasure,
 } from '../hooks'
 import { Images } from '../assets'
 import { Button } from '../components'
@@ -16,6 +16,15 @@ export const Navbar = () => {
   const { logo, links, button } = NAVBAR_CONTENT
   const { width, setWidth } = useWindowSize()
   const { rect, myRef }: any = useMeasure()
+  const scrollToTop = (e: any, name: string) => {
+    if(name != '#home') return;
+    e.preventDefault()
+
+    return window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
 
   useEffect(() => {
     if(rect) setWidth(rect.width)
@@ -32,10 +41,12 @@ export const Navbar = () => {
           <div className="flex">
             <div className="flex mx-5 items-center">
               {links.map((link: any, index: number) => (
-                <p 
+                <a
+                  {...link}
+                  onClick={(e) => scrollToTop(e, link.href)}
                   key={index} 
                   className="mx-3 border-b cursor-default hover:border-black duration-500"
-                >{link.name}</p>
+                >{link.title}</a>
               ))}
             </div>
             <Button blue>
@@ -55,10 +66,15 @@ export const Navbar = () => {
             />
             <div className="w-full mb-3 display: flex flex-col justify-center items-center">
               {links.map((link: any, index: number) => (
-                <p 
-                  key={index} 
+                <a 
+                  {...link}
+                  key={index}
+                  onClick={(e) => {
+                    scrollToTop(e, link.href);
+                    setIsOpen(false)
+                  }} 
                   className="my-2 w-full mx-auto cursor-pointer text-2xl flex justify-center items-center hover:underline hover:decoration-dashed"
-                >{link.name}</p>
+                >{link.title}</a>
               ))}
             </div>
             <div className="scale-90">

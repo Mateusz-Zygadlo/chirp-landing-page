@@ -25,6 +25,7 @@ export const Header = () => {
   return(
     <div 
       ref={myRef}
+      id="home"
       className="w-full h-full bg-main pt-5"
     >
       <div className="flex flex-col-reverse lg:flex-row lg:justify-between py-5 p-5 md:px-16 lg:px-24">

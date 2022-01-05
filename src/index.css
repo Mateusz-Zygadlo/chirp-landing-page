@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html{
+    scroll-behavior: smooth;
+  }
+}
+
 @layer utilities {
   .responsiveGrid{
     width: 100%;
@@ -13,6 +19,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: start;
+  }
+  #tweets,
+  #pricing{
+    scroll-margin-top: 100px;
   }
   @media only screen and (max-width: 600px){
     .responsiveGrid{
